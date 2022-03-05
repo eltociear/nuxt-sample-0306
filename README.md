@@ -1,1 +1,2 @@
-test repository for Nuxt.Js
+Test repository for Nuxt.Js.
+
