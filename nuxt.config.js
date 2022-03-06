@@ -38,10 +38,24 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: "AIzaSyBFE5NA1V40BQK_wrddRhvnVwweXboWSjA",
+          authDomain: "bandism-ash.firebaseapp.com",
+          projectId: "bandism-ash",
+          storageBucket: "bandism-ash.appspot.com",
+          messagingSenderId: "648722542706",
+          appId: "1:648722542706:web:0a8db42f7e0d351f2192eb",
+          measurementId: "G-KY6STCCVZW"
+        },
+        services: {
+          firestore: true,
+          storage: true
+        }
+      }
+    ]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
